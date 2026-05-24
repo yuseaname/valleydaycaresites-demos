@@ -1,0 +1,11 @@
+# Ignore large PNG source files (WebP optimized versions are committed)
+*.png
+
+# Ignore backup files
+*.backup
+
+# Ignore OS files
+.DS_Store
+
+# Ignore spec docs
+MEDIA_INTEGRATION_SPEC.md
