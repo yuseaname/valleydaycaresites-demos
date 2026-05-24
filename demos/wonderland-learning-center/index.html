@@ -227,7 +227,17 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10 Q50 30 40 50 Q30 30 40 10' fill='%23ffffff' fill-opacity='0.02'/%3E%3C/svg%3E");
+            background: url('assets/images/hero-forest-magic.webp');
+            background-size: cover;
+            background-position: center 30%;
+            opacity: 0.7;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(13,40,24,0.3) 0%, rgba(13,40,24,0.5) 50%, rgba(13,40,24,0.8) 100%);
+            z-index: 2;
         }
 
         .hero-content {
@@ -694,6 +704,21 @@
         /* ===== ENROLLMENT ===== */
         .enroll {
             text-align: center;
+            background-image: url('assets/images/enrollment-forest-welcome.webp');
+            background-size: cover;
+            background-position: center 40%;
+            position: relative;
+        }
+        .enroll::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(13,40,24,0.85);
+            z-index: 0;
+        }
+        .enroll .section-inner {
+            position: relative;
+            z-index: 10;
         }
         .enroll h2 {
             font-size: clamp(32px, 4.5vw, 52px);
@@ -923,17 +948,23 @@
 
             <div class="safety-grid">
                 <div class="safety-card glass reveal">
-                    <span class="safety-icon">🔒</span>
+                                        <div style="height: 160px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -28px -28px 16px;">
+                        <img src="assets/images/safety-forest-boundary.webp" alt="Secure Facility" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <h3>Secure Facility</h3>
                     <p>Keycard entry, fenced outdoor play areas, and 24/7 security monitoring ensure your child's safety from arrival to pickup.</p>
                 </div>
                 <div class="safety-card glass reveal reveal-delay-1">
-                    <span class="safety-icon">❤️</span>
+                                        <div style="height: 160px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -28px -28px 16px;">
+                        <img src="assets/images/safety-outdoor-first-aid.webp" alt="Health First" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <h3>Health First</h3>
                     <p>Licensed pediatric nurse on staff, daily wellness checks, allergen-aware meal plans, and strict cleanliness protocols.</p>
                 </div>
                 <div class="safety-card glass reveal reveal-delay-2">
-                    <span class="safety-icon">📋</span>
+                                        <div style="height: 160px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -28px -28px 16px;">
+                        <img src="assets/images/safety-nature-certifications.webp" alt="Licensed & Certified" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <h3>Licensed & Certified</h3>
                     <p>California Community Care licensed. All teachers CPR/First Aid certified with background checks and ongoing training.</p>
                 </div>
@@ -959,42 +990,66 @@
             <p class="section-desc reveal reveal-delay-2">Our curriculum balances structured learning with creative exploration across eight essential development areas.</p>
 
             <div class="programs-grid">
-                <div class="program-card glass reveal">
+                <div class="program-card glass reveal" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-art-nature.webp" alt="Creative Arts" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">🎨</span>
                     <h4>Creative Arts</h4>
                     <p>Painting, sculpture, music, and dance</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-1">
+                <div class="program-card glass reveal reveal-delay-1" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-music-dance.webp" alt="Early Math" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">🔢</span>
                     <h4>Early Math</h4>
                     <p>Counting, patterns, and problem-solving</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-2">
+                <div class="program-card glass reveal reveal-delay-2" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-story-circle.webp" alt="Literacy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">📖</span>
                     <h4>Literacy</h4>
                     <p>Phonics, storytelling, and reading readiness</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-3">
+                <div class="program-card glass reveal reveal-delay-3" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-gardening.webp" alt="Science" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">🔬</span>
                     <h4>Science</h4>
                     <p>Experiments, nature, and discovery</p>
                 </div>
-                <div class="program-card glass reveal">
+                <div class="program-card glass reveal" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-nature-walk.webp" alt="Social Studies" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">🌍</span>
                     <h4>Social Studies</h4>
                     <p>Community, culture, and citizenship</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-1">
+                <div class="program-card glass reveal reveal-delay-1" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-yoga-movement.webp" alt="Physical Health" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">💪</span>
                     <h4>Physical Health</h4>
                     <p>Gross motor skills, yoga, and sports</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-2">
+                <div class="program-card glass reveal reveal-delay-2" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-cooking-kitchen.webp" alt="Technology" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">💻</span>
                     <h4>Technology</h4>
                     <p>Age-appropriate digital literacy</p>
                 </div>
-                <div class="program-card glass reveal reveal-delay-3">
+                <div class="program-card glass reveal reveal-delay-3" style="overflow: hidden;">
+                    <div style="height: 140px; overflow: hidden; border-radius: 24px 24px 0 0; margin: -24px -24px 16px;">
+                        <img src="assets/images/program-animal-care.webp" alt="Nature & Garden" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;">
+                    </div>
                     <span class="program-emoji">🌱</span>
                     <h4>Nature & Garden</h4>
                     <p>Outdoor learning and sustainability</p>
@@ -1015,33 +1070,36 @@
 
             <div class="teachers-grid">
                 <div class="teacher-card glass reveal">
-                    <div class="teacher-visual">
-                        <span class="teacher-emoji">👩‍🏫</span>
+                    <div class="teacher-visual" style="height: 280px; position: relative; overflow: hidden;">
+                        <img src="assets/images/teacher-forest-guide.webp" alt="Ms. Willow" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60%; background: linear-gradient(to top, rgba(13,40,24,0.95), transparent);"></div>
                     </div>
                     <div class="teacher-info">
-                        <h4>Ms. Elena</h4>
-                        <span class="teacher-role">Lead Teacher & Art Specialist</span>
-                        <p>15 years of early childhood education. MFA in Art Education. Creates magical art experiences that children talk about for years.</p>
+                        <h4>Ms. Willow</h4>
+                        <span class="teacher-role">Forest Guide & Nature Teacher</span>
+                        <p>Certified outdoor educator with 12 years of forest school experience. Children follow her like she's part of the woods.</p>
                     </div>
                 </div>
                 <div class="teacher-card glass reveal reveal-delay-1">
-                    <div class="teacher-visual">
-                        <span class="teacher-emoji">👨‍🏫</span>
+                    <div class="teacher-visual" style="height: 280px; position: relative; overflow: hidden;">
+                        <img src="assets/images/teacher-music-keeper.webp" alt="Mr. Oak" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60%; background: linear-gradient(to top, rgba(13,40,24,0.95), transparent);"></div>
                     </div>
                     <div class="teacher-info">
-                        <h4>Mr. James</h4>
-                        <span class="teacher-role">Science & Nature Director</span>
-                        <p>Former museum educator. Turns every science lesson into an adventure. The kids call him "Professor Discovery."</p>
+                        <h4>Mr. Oak</h4>
+                        <span class="teacher-role">Music & Story Keeper</span>
+                        <p>Hand drum maker and folk musician. His stories by the fire are the highlight of every child's week.</p>
                     </div>
                 </div>
                 <div class="teacher-card glass reveal reveal-delay-2">
-                    <div class="teacher-visual">
-                        <span class="teacher-emoji">👩‍⚕️</span>
+                    <div class="teacher-visual" style="height: 280px; position: relative; overflow: hidden;">
+                        <img src="assets/images/teacher-garden-witch.webp" alt="Ms. Sage" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%;">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 60%; background: linear-gradient(to top, rgba(13,40,24,0.95), transparent);"></div>
                     </div>
                     <div class="teacher-info">
-                        <h4>Nurse Sarah</h4>
-                        <span class="teacher-role">Health & Wellness Coordinator</span>
-                        <p>Pediatric RN with 10 years experience. Keeps every child healthy, happy, and ready to learn. Parents love her daily wellness reports.</p>
+                        <h4>Ms. Sage</h4>
+                        <span class="teacher-role">Garden Keeper & Herbalist</span>
+                        <p>Herb gardener and plant whisperer. Teaches children to grow, harvest, and appreciate the earth.</p>
                     </div>
                 </div>
             </div>
@@ -1062,7 +1120,7 @@
                     <div class="testimonial-stars">★★★★★</div>
                     <p>My daughter used to cry at drop-off. Now she runs inside excited to see her friends and teachers. Wonderland changed everything for our family.</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">👩</div>
+                        <div class="testimonial-avatar"><img src="assets/images/testimonial-forest-mom.webp" alt="Parent"></div>
                         <div>
                             <strong>Maria G.</strong>
                             <span>Mother of 3-year-old</span>
@@ -1073,7 +1131,7 @@
                     <div class="testimonial-stars">★★★★★</div>
                     <p>The daily photo updates and detailed reports are incredible. I feel connected to my son's day even while I'm at work. The teachers truly care.</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">👨</div>
+                        <div class="testimonial-avatar"><img src="assets/images/testimonial-forest-dad.webp" alt="Parent"></div>
                         <div>
                             <strong>David K.</strong>
                             <span>Father of 4-year-old</span>
@@ -1084,7 +1142,7 @@
                     <div class="testimonial-stars">★★★★★</div>
                     <p>We toured six preschools. The moment we walked into Wonderland, we knew. The energy, the creativity, the love — it's tangible. Best decision we ever made.</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">👩</div>
+                        <div class="testimonial-avatar"><img src="assets/images/testimonial-forest-parent.webp" alt="Parent"></div>
                         <div>
                             <strong>Jennifer T.</strong>
                             <span>Mother of twins, age 2</span>

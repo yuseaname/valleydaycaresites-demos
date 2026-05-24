@@ -5,30 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ValleyDaycareSites — Premium Demos</title>
     <style>
-        body { font-family: system-ui; background: #0F0F23; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 24px; }
-        h1 { font-size: 32px; margin-bottom: 40px; text-align: center; }
-        .demos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 600px; width: 100%; }
-        .demo { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; text-align: center; transition: all 0.3s; text-decoration: none; color: white; }
-        .demo:hover { transform: translateY(-4px); border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.08); }
-        .demo h2 { margin: 0 0 8px; font-size: 20px; }
-        .demo p { margin: 0; opacity: 0.6; font-size: 14px; }
-        .demo .emoji { font-size: 48px; margin-bottom: 16px; display: block; }
-        .footer { margin-top: 40px; font-size: 13px; opacity: 0.5; }
-        @media (max-width: 600px) { .demos { grid-template-columns: 1fr; } h1 { font-size: 24px; } }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #0F0F23;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 24px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.6;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 500px;
+            line-height: 1.5;
+        }
+        .demos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 700px;
+            width: 100%;
+        }
+        .demo {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+        .demo:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.08);
+        }
+        .demo h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .demo p {
+            margin: 0;
+            opacity: 0.6;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .demo .emoji {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            opacity: 0.5;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .demos { grid-template-columns: 1fr; }
+            h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
     <h1>🌟 ValleyDaycareSites Premium Demos</h1>
+    <p class="subtitle">Four distinct preschool website styles for the San Fernando Valley. Each demo features 20 photorealistic images, responsive design, and conversion-optimized layouts.</p>
     <div class="demos">
         <a href="dreamscape-academy/" class="demo">
             <span class="emoji">🌌</span>
             <h2>Dreamscape Academy</h2>
-            <p>Dark cosmic theme with floating nebulas, orbiting elements, and starfields. For tech-forward, modern brands.</p>
+            <p>Dark cosmic theme with golden gradients and celestial wonder. For tech-forward, modern brands.</p>
         </a>
         <a href="wonderland-learning-center/" class="demo">
             <span class="emoji">🌲</span>
             <h2>Wonderland Learning Center</h2>
-            <p>Enchanted forest theme with fireflies, floating leaves, and nature-based magic. For organic, nature-focused brands.</p>
+            <p>Enchanted forest theme with nature-based magic and organic discovery. For nature-focused brands.</p>
+        </a>
+        <a href="little-explorers-academy/" class="demo">
+            <span class="emoji">🔬</span>
+            <h2>Little Explorers Academy</h2>
+            <p>Clean, professional navy & teal theme with STEM focus. For structured, academic brands.</p>
+        </a>
+        <a href="sunny-days-preschool/" class="demo">
+            <span class="emoji">☀️</span>
+            <h2>Sunny Days Preschool</h2>
+            <p>Warm, joyful sunshine theme with coral and gold accents. For boutique, family-friendly brands.</p>
         </a>
     </div>
     <p class="footer">© 2026 ValleyDaycareSites.com — Premium Daycare Websites for the San Fernando Valley</p>
